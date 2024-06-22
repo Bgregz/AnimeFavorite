@@ -1,0 +1,147 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #23332e;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: white;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  width: 50%;
+  max-height: 100vh;
+  overflow: scroll;
+  margin-left: 400px;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  /* width: 2100 px */
+}
+/* Header CSS */
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3b00af;
+  color: white;
+  margin-bottom: 50px;
+  width: 95%;
+  padding-right: 40px;
+  padding-left: 35px;
+  margin-left: 20px;
+  height: 100px;
+}
+.navBar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.redirectLinks {
+  display: flex;
+  gap: 20px;
+}
+/* Header CSS */
+
+/* Anime Display  */
+
+.animeHeaders {
+  display: flex;
+  justify-content: center;
+}
+.animePictures {
+  margin-top: 50px;
+}
+.animeHeaders,
+.animeInfo {
+  border-radius: 25px;
+  background-color: #505856;
+  height: 800px;
+  width: 400px;
+  overflow: scroll;
+}
+.animeList {
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cardClass {
+  height: 700px;
+  width: 100%;
+}
+.animeButton {
+  width: 100%;
+  padding: 0px;
+  background-color: #505856;
+  color: white;
+  border-bottom-color: rgb(255, 255, 255);
+}
+
+li {
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  text-decoration: none;
+}
+
+/* Anime display */
+
+/* Login display */
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 500px;
+  width: 700px;
+  background-color: rgba(167, 158, 158, 0.888);
+  margin-top: 12%;
+
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; Centers horizontally */
+  justify-content: center; /* Centers vertically */
+  /* height: 100%; */
+}
+.input{
+  width: 100%;
+  height: 30px;
+  background-color: rgb(233, 224, 224);
+  color: black;
+}
+.login-button {
+  margin-top: 20px; /* Optional: Adds some space above the button */
+  padding: 10px 20px;
+  background-color: #505856;
+  color: white;
+  border: none;
+}
+
+.login-button:hover {
+  background-color: #20503c; 
+  cursor: pointer;
+  
+}
