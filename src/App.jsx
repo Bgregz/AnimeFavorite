@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Homepage from './pages/Homepage.jsx';
 import Favorites from './pages/Favorites';
+import Signup from './pages/Signup'; 
+import { UserProvider } from './UserContext';
 
 function App() {
   const [anime, setAnime] = useState([]);
@@ -33,13 +35,16 @@ function App() {
   }, []);
 
   return (
+    <UserProvider>
     <BrowserRouter>
       <Routes>
+      <Route path='/signup' element={<Signup />} />
         <Route path='/login' element={<Login />} />
         <Route path='/' element={<Homepage anime={anime} />} />
         <Route path='/favorites' element={<Favorites />} />
       </Routes>
     </BrowserRouter>
+    </UserProvider>
   );
 }
 

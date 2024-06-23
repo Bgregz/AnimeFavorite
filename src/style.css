@@ -1,7 +1,8 @@
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  background-color: #23332e;
+  /* background-color: #23332e; */
+  background-color: rgb(53, 60, 69);
   display: flex;
   justify-content: center;
   margin: 0;
@@ -21,8 +22,8 @@ body {
 }
 
 #root {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   /* width: 2100 px */
 }
 /* Header CSS */
@@ -33,10 +34,11 @@ body {
   background-color: #3b00af;
   color: white;
   margin-bottom: 50px;
-  width: 95%;
+  /* width: 95%; */
+  min-width: 100vh;
   padding-right: 40px;
   padding-left: 35px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   height: 100px;
 }
 .navBar a {
@@ -56,8 +58,16 @@ body {
   display: flex;
   justify-content: center;
 }
+.center{
+  display: flex;
+  justify-content: center;
+  
+ 
+}
 .animePictures {
   margin-top: 50px;
+  
+
 }
 .animeHeaders,
 .animeInfo {
@@ -66,12 +76,16 @@ body {
   height: 800px;
   width: 400px;
   overflow: scroll;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: fit-content;
 }
 .animeList {
   margin-left: 0px;
   display: flex;
   align-items: center;
   gap: 15px;
+  
 }
 
 .cardClass {
@@ -84,6 +98,22 @@ body {
   background-color: #505856;
   color: white;
   border-bottom-color: rgb(255, 255, 255);
+}
+.favoriteButton {
+  margin-top: 20px;
+  background-color: rgb(2, 46, 167);
+  width: 66%
+  
+}
+.favoriteButton:hover{
+  transform: scale(1.06);
+  cursor: pointer;
+}
+.favoriteButton:focus{
+  background-color: #3b00af;
+}
+.favoriteButton:active{
+  background-color: #3b00af;
 }
 
 li {
@@ -143,5 +173,37 @@ ul {
 .login-button:hover {
   background-color: #20503c; 
   cursor: pointer;
+  
+}
+
+.pagelink{
+
+  font-size: 20px;
+  margin-top: 10px;
+  text-decoration: underline;
+  color: rgb(0, 74, 158);
+  font-weight: bold;
+}
+
+/* FavoritesPage */
+.favoritesPage{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  overflow-y: scroll;
+  padding-left: 175px;
+  
+}
+.favoritesAlignment{
+display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+.imageContainer{
+  height: 500px;
+  width: 300px;
+  
   
 }

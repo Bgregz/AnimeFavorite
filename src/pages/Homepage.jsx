@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import PageNav from '../components/PageNav';
 import Card from '../components/Card';
 import AnimeList from '../components/AnimeList';
+import { UserContext } from '../UserContext';
 
 function Homepage({ anime }) {
   const [currentAnime, setCurrentAnime] = useState({});
+  const {currentUser} = useContext(UserContext)
 
   function moreInformation(listInfo) {
     const selectedAnime = {
